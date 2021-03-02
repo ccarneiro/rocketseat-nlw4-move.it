@@ -1,0 +1,66 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6rem;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.685367) 31.46%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > img {
+  fill: var(--blue);
+  margin: 2rem 0;
+  position: absolute;
+  top: 0px;
+}
+
+.container > div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container button {
+  width: 100%;
+  background: transparent;
+  height: 6rem;
+  border: 0;
+  border-left: transparent;
+  display: flex;
+}
+
+.container button > div:first-child {
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  border-radius: 0 5px 5px 0;
+}
+
+.container button.active > div:first-child {
+  background: var(--blue);
+}
+
+.container button:hover > div:first-child {
+  background: var(--green);
+}
+
+.container button > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

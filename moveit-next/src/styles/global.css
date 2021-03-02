@@ -9,6 +9,7 @@
   --background: #f2f3f5;
   --gray-line: #dcdde0;
   --text: #666666;
+  --text-blue-light: #b2b9ff;
   --text-highline: #b3b9ff;
   --title: #2e384d;
   --red: #e83f5b;
@@ -39,7 +40,7 @@ body,
 input,
 textarea,
 button {
-  font: 400 1rem 'Inter', sans-serif;
+  font: 400 1rem "Inter", sans-serif;
 }
 
 button {
