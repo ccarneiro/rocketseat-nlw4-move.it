@@ -21,7 +21,7 @@ interface AuthorizationProviderProps {
   children: React.ReactNode;
 }
 
-const allowedUrls = ["/login", "/authorization"];
+const allowedUrls = ["/login"];
 const accessTokenKey = "accessToken";
 
 export const AuthorizationContext = createContext(
